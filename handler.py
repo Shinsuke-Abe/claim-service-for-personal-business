@@ -23,6 +23,11 @@
 # 5. メールで送る
 # 各APIのシークレットキーは暗号化してDynamoDBに保存する
 # 認証はこのサービスの範囲外(使い方の模索)
+def claim_main(event, context):
+    return {
+        "message": "Go Serverless v1.0! Your function executed successfully!",
+        "event": event
+    }
 
 # TODO プロジェクトの締め日を取得
 
